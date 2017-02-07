@@ -50,6 +50,14 @@ namespace Family
                             ForegroundColor = Color.Blue,
                             FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label))
 
+                        },
+                         new Span
+                        {
+                            Text = Environment.NewLine + "Tyke",
+                            FontAttributes = FontAttributes.None,
+                            ForegroundColor = Color.Blue,
+                            FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label))
+
                         }
                     }  
                 }
