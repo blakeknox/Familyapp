@@ -9,62 +9,64 @@ namespace Family
 {
     class FamilyPage : ContentPage
     {
+
         public FamilyPage()
         {
-
             BackgroundColor = Color.Aqua;
-            Content = new Label
+
+            var stacklayout = new StackLayout
             {
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center,
-              
-                FormattedText = new FormattedString
+                Orientation = StackOrientation.Vertical,
+                Children =
                 {
-                    Spans =
-                    {
-                        new Span
+                        new Label
                         {
                             Text = "Greetings, and Welcome to my family app. My Family Memebers are:",
                              FontAttributes = FontAttributes.Bold
 
                         },
-                        new Span
+                        new Label
                         {
                             Text = Environment.NewLine + "Blake",
                             FontAttributes = FontAttributes.Bold,
-                            ForegroundColor = Color.Red,
+                            BackgroundColor = Color.Red,
 
 
                         },
-                        new Span
+                        new Label
                         {
                             Text = Environment.NewLine + "Chelsea",
                             FontAttributes = FontAttributes.Italic,
-                            ForegroundColor = Color.Green
+                            BackgroundColor = Color.Green
 
                         },
-                        new Span
+                        new Label
                         {
                             Text = Environment.NewLine + "Karson",
                             FontAttributes = FontAttributes.None,
-                            ForegroundColor = Color.Blue,
+                            BackgroundColor = Color.Blue,
                             FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label))
 
                         },
-                         new Span
+                         new Label
                         {
                             Text = Environment.NewLine + "Tyke",
                             FontAttributes = FontAttributes.None,
-                            ForegroundColor = Color.Blue,
-                            FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label))
+                            BackgroundColor = Color.Blue,
+                            FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+                            VerticalOptions = LayoutOptions.FillAndExpand
 
                         }
-                    }  
                 }
                 
-
+                
             };
-
+           Content = new ScrollView
+           {
+              Orientation = ScrollOrientation.Both,
+              Content = stacklayout
+           };
         }
+            
     }
 }
