@@ -12,7 +12,7 @@ namespace Family
         public FamilyPage()
         {
 
-            BackgroundColor = Color.Aqua;
+            BackgroundColor = Color.Black;
             Content = new Label
             {
                 HorizontalOptions = LayoutOptions.Center,
