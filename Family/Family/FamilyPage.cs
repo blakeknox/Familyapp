@@ -39,6 +39,12 @@ namespace Family
                             TextColor = Color.Red,
                             FontSize = 24
                         },
+                        new Image
+                        {
+                          VerticalOptions = LayoutOptions.Center,
+                          HorizontalOptions = LayoutOptions.Center,
+                          Source = ImageSource.FromResource("Family.profile.jpg")
+                        },
                         new Label
                         {
                             Text = "Chelsea - Is the mother and she is also in college. She is in her last class right now.",
@@ -47,6 +53,12 @@ namespace Family
                             HorizontalOptions = LayoutOptions.Center,
                             BackgroundColor = Color.Green,
                             FontSize = 28
+                        },
+                        new Image
+                        {
+                          VerticalOptions = LayoutOptions.Center,
+                          HorizontalOptions = LayoutOptions.Center,
+                          Source = ImageSource.FromResource("Family.Chelsea.jpg")
                         },
                         new Label
                         {
@@ -59,6 +71,12 @@ namespace Family
                             FontSize = 34 //Device.GetNamedSize(NamedSize.Large, typeof(Label))
 
                         },
+                        new Image
+                        {
+                          VerticalOptions = LayoutOptions.Center,
+                          HorizontalOptions = LayoutOptions.Center,
+                          Source = ImageSource.FromResource("Family.Karson.jpg")
+                        },
                         new Label
                         {
                             Text = "Tyke - He is a rescued dog. We got him from a rescue house that my step-sister runs. We got lucky because he is truely a one in a million animal.",
@@ -67,6 +85,12 @@ namespace Family
                             FontAttributes = FontAttributes.Bold,
                             FontSize = 20 //Device.GetNamedSize(NamedSize.Large, typeof(Label))
 
+                        },
+                        new Image
+                        {
+                          VerticalOptions = LayoutOptions.Center,
+                          HorizontalOptions = LayoutOptions.Center,
+                          Source = ImageSource.FromResource("Family.Tyke.jpg")
                         }
 
                 }
